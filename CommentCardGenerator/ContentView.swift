@@ -32,6 +32,9 @@ struct ContentView: View {
             })
 
         }
+        VStack{
+            Text("Enter Happiness")
+        }
         
         
         //Text("I find ")

@@ -9,16 +9,26 @@ import Foundation
 
 class CommentCard {
     var happiness: String
-    var difficulty: Int
+    var isHappy: Bool
+    var difficulty: String
+    var isDifficult: Bool
     var achievements: Int
     
     
     
     init () {
         happiness = "Very Happy"
-        difficulty = 0
+        isHappy = true
+        difficulty = "Very Hard"
+        isDifficult = false
         achievements = 10
     }
-
+    func generate() 
     
-}
+        }
+            
+    
+    
+    
+    
+   
