@@ -14,6 +14,7 @@
 		691C5FA627B282C000D3136D /* CommentCardGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C5FA527B282C000D3136D /* CommentCardGeneratorTests.swift */; };
 		691C5FB027B282C000D3136D /* CommentCardGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C5FAF27B282C000D3136D /* CommentCardGeneratorUITests.swift */; };
 		691C5FB227B282C000D3136D /* CommentCardGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C5FB127B282C000D3136D /* CommentCardGeneratorUITestsLaunchTests.swift */; };
+		691C5FBF27B2834100D3136D /* CommentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C5FBE27B2834100D3136D /* CommentCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		691C5FAB27B282C000D3136D /* CommentCardGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		691C5FAF27B282C000D3136D /* CommentCardGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorUITests.swift; sourceTree = "<group>"; };
 		691C5FB127B282C000D3136D /* CommentCardGeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		691C5FBE27B2834100D3136D /* CommentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				691C5F9627B282BD00D3136D /* ContentView.swift */,
 				691C5F9827B282BF00D3136D /* Assets.xcassets */,
 				691C5F9A27B282BF00D3136D /* Preview Content */,
+				691C5FBE27B2834100D3136D /* CommentCard.swift */,
 			);
 			path = CommentCardGenerator;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				691C5F9727B282BD00D3136D /* ContentView.swift in Sources */,
+				691C5FBF27B2834100D3136D /* CommentCard.swift in Sources */,
 				691C5F9527B282BD00D3136D /* CommentCardGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
