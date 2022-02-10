@@ -23,7 +23,7 @@ class CommentCard {
         isDifficult = false
         achievements = 10
     }
-    func generate() 
+
     
         }
             

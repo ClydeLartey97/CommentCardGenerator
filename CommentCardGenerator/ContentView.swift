@@ -8,41 +8,114 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
+    @State private var difficulty = ""
+    @State private var enjoyment: Double = 1.0
+    @State private var isEditing = false
     var body: some View {
+        
+        
+        
+        
+        
+        
+        
+        
         VStack {
-            Text("Create Comment Card")
+            Text("Select your difficulty")
+                .foregroundColor(.green)
             
-                .padding(30)
-            Text("Enter Level of difficulty")
+                .padding(15)
+            
             Button("Very Hard", action: {
             
+                difficulty = "very hard"
                 
             })
             Button("Hard", action: {
                 
+                difficulty = "hard"
+                
             })
             Button("Ok", action: {
-                
+                difficulty = "ok"
             })
             Button("Easy", action: {
-                
+                difficulty = "easy"
             })
             Button("Very Easy", action: {
-                
+                difficulty = "very easy"
             })
+            Text("I am finding Computer Science \(difficulty)")
+                .foregroundColor(.orange)
+                .padding(10)
+            
+            
+            
+            
+            
+            Text("Select enjoyment")
+                .foregroundColor(.green)
+                .padding(15)
+            //Slider(value: $enjoyment, in: 1...100) {
+            Slider(
+                value: $enjoyment,
+                in: 1...10,
+                step: 1
+                
+                
+            ) {
+                Text("Current Enjoyment ")
+                
+            } minimumValueLabel: {
+                Text("0")
+            } maximumValueLabel: {
+                Text("10")
+            } onEditingChanged: { editing in
+                isEditing = editing
+            }
+            
+                Text("Currently my happiness is a \(enjoyment) out of 10")
+                //Text("Happiness figure \(enjoyment)")
+                
+                
+            }
+                
+           
+            }
+                
+                
+                
+            
+        }
+        
+        
+        
+       
+            
+            
+                
+            
+        
+        
+        
+        
+        
+        
 
-        }
-        VStack{
-            Text("Enter Happiness")
-        }
+        
+
         
         
-        //Text("I find ")
-    }
-}
+        
+
+    
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
