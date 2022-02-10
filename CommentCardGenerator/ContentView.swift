@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var difficulty = ""
     @State private var enjoyment: Double = 1.0
     @State private var isEditing = false
+    
     var body: some View {
         
         
@@ -49,7 +50,7 @@ struct ContentView: View {
             })
             Text("I am finding Computer Science \(difficulty)")
                 .foregroundColor(.orange)
-                .padding(10)
+                .padding(35)
             
             
             
@@ -58,7 +59,6 @@ struct ContentView: View {
             Text("Select enjoyment")
                 .foregroundColor(.green)
                 .padding(15)
-            //Slider(value: $enjoyment, in: 1...100) {
             Slider(
                 value: $enjoyment,
                 in: 1...10,
@@ -76,41 +76,22 @@ struct ContentView: View {
                 isEditing = editing
             }
             
-                Text("Currently my happiness is a \(enjoyment) out of 10")
+                Text("My happiness is in Computer Science is \(Int(enjoyment)) out of 10")
+                .foregroundColor(.orange)
                 //Text("Happiness figure \(enjoyment)")
-                
-                
-            }
-                
+                .padding(35)
+            
+            
+            
+            
+            
+                }
            
             }
                 
-                
-                
-            
         }
         
-        
-        
-       
-            
-            
-                
-            
-        
-        
-        
-        
-        
-        
 
-        
-
-        
-        
-        
-
-    
 
 
 struct ContentView_Previews: PreviewProvider {
