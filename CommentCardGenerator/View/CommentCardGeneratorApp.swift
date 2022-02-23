@@ -4,15 +4,13 @@
 //
 //  Created by Lartey, David (HWTA) on 08/02/2022.
 //
-
 import SwiftUI
 
 @main
-struct CommentCardGeneratorApp: App {
-    
+struct CommentCardWriterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(commentData: CommentData(enjoyment: 0, subject: 0, understanding: 0, weakness: 0), commentGenerator: CommentGenerator())
         }
     }
 }
