@@ -19,13 +19,10 @@ class CommentData: ObservableObject{
     
     
     
-    init(enjoyment: Int, subject: Int, understanding: Int, weakness: Int){
+    init(understanding: Int, weakness: Int, enjoyment: Int, subject: Int){
         self.understanding = understanding
-        
         self.weakness = weakness
-        
         self.enjoyment = enjoyment
-        
         self.subject = subject
 
     }
